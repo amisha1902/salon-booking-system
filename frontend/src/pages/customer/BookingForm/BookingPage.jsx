@@ -3,68 +3,79 @@ import "./BookingPage.css";
 
 function BookingPage() {
   return (
-    <div className="booking-bg">
-    <div className="container">
-      <h2 className="title">Book Your Appointment</h2>
-      <p className="subtitle">Please fill the below form , it will take only minute</p>
-      <form className="booking-container">
-        <div className="sub-Container">
-          <div className="mb-3">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Your Name"
-            />
+    <div className="booking-bg d-flex align-items-center justify-content-center py-5">
+      <div
+        className="container blur-box shadow-lg"
+        style={{ maxWidth: "650px" }}
+      >
+        <h2 className="text-center mb-1">Book Your Appointment</h2>
+        <p className="text-center text-light opacity-75 mb-4">
+          Please fill the below form, it will take only a minute
+        </p>
+
+        <form>
+          <div className="row mb-3">
+            <div className="col-md-6">
+              <input
+                type="text"
+                className="form-control bg-transparent text-light border-light"
+                placeholder="Your Name"
+              />
+            </div>
+            <div className="col-md-6 mt-3 mt-md-0">
+              <input
+                type="email"
+                className="form-control bg-transparent text-light border-light"
+                placeholder="Email"
+              />
+            </div>
           </div>
-          <div className="mb-3">
-            <input type="email" className="form-control" placeholder="Email" />
+
+          <div className="row mb-3">
+            <div className="col-md-6">
+              <input
+                type="tel"
+                className="form-control bg-transparent text-light border-light"
+                placeholder="Phone"
+              />
+            </div>
+            <div className="col-md-6 mt-3 mt-md-0">
+              <select className="form-select bg-dark text-light">
+                <option value="">Select Your Service</option>
+                <option value="wash">Hair Wash</option>
+                <option value="cutting">Hair Cutting</option>
+                <option value="facial">Facial</option>
+                <option value="color">Color</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div className="sub-Container">
-          <div className="mb-3">
-            <input type="tel" className="form-control" placeholder="Phone" />
+          <div className="row mb-3">
+            <div className="col-md-6">
+              <input
+                type="date"
+                className="form-control bg-transparent text-light border-light"
+              />
+            </div>
+            <div className="col-md-6 mt-3 mt-md-0">
+              <input
+                type="time"
+                className="form-control bg-transparent text-light border-light"
+              />
+            </div>
           </div>
-          <div className="mb-3">
-            <select name="service" id="service-select" className="form-control">
-              <option value="">Select Your Service Type</option>
-              <option value="wash">Hair Wash</option>
-              <option value="cutting">Hair Cutting</option>
-              <option value="facial">Facial</option>
-              <option value="color">Color</option>
-            </select>
-          </div>
-        </div>
-        <div className="sub-Container">
-          <div className="mb-3">
-            <input
-              type="date"
-              className="form-control"
-              placeholder="Choose Your Date"
-            />
-          </div>
-          <div className="mb-3">
-            <input
-              type="time"
-              className="form-control"
-              placeholder="Choose Your Time"
-            />
-          </div>
-        </div>
-        <div className="mb-3 full-width">
-         
+          <div className="mb-4">
             <textarea
-              type="text"
-              className="form-control"
+              className="form-control bg-transparent text-light border-light"
               placeholder="Address"
               rows={3}
             ></textarea>
-         
-        </div>
-        <div  className="button-wrapper full-width">
-          <button className="btn btn-light">Book Now</button>
-        </div>
-      </form>
-    </div>
+          </div>
+
+          <div className="text-center">
+            <button className="btn btn-light px-5">Book Now</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
