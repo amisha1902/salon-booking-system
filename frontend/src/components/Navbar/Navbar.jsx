@@ -33,10 +33,8 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* ✅ CENTER SECTION (Menu OR Search Bar) */}
         <div className="collapse navbar-collapse justify-content-center" id="glamoraNavbar">
 
-          {/* ✅ SHOW SEARCH BAR ONLY ON /salonList */}
           {isSalonListPage ? (
             <div className="w-50">
               <div className="input-group">
@@ -51,7 +49,6 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            /* ✅ NORMAL MENU ON ALL OTHER PAGES */
             <ul className="navbar-nav gap-4">
               <li className="nav-item">
                 <Link className="nav-link fw-semibold text-danger" to="/">
@@ -78,12 +75,11 @@ const Navbar = () => {
 
         </div>
 
-        {/* ✅ RIGHT SECTION (ALWAYS SAME) */}
         <div className="d-flex align-items-center gap-4">
           {!isSalonListPage && <FiSearch size={20} className="cursor-pointer" />}
           <HiOutlineShoppingBag size={22} className="cursor-pointer" />
 
-          <Link className="nav-link fw-semibold" to="/signup">
+          <Link className="nav-link fw-semibold" to="/register">
             Sign Up
           </Link>
            <Link to="/login">
