@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProfilePage.css";
+// import "./ProfilePage.css";
 import profile from "../../../../images/profile.jpeg";
 
 function ProfilePage() {
@@ -29,7 +29,7 @@ function ProfilePage() {
 
         <div className="row g-3 mb-3">
           <div className="col-md-6">
-            <div className="p-3 rounded bg-dark bg-opacity-50 border h-100">
+            <div className="p-3 rounded bg-light bg-opacity-50 border h-100">
               <h5 className="text-center mb-3">Address</h5>
               <p className="mb-1">N-12/5, Pune</p>
               <p>Maharashtra – 411045</p>
@@ -38,7 +38,7 @@ function ProfilePage() {
           </div>
 
           <div className="col-md-6">
-            <div className="p-3 rounded bg-dark bg-opacity-50 border h-100">
+            <div className="p-3 rounded bg-light bg-opacity-50 border h-100">
               <h5 className="text-center mb-3">Upcoming Appointment</h5>
               <p className="mb-1">Haircut — 12 Jan 2025</p>
               <p>11:30 AM — Salon Service</p>
@@ -46,15 +46,15 @@ function ProfilePage() {
           </div>
         </div>
 
-        <div className="p-3 rounded bg-dark bg-opacity-50 border">
+        <div className="p-3 rounded bg-dark bg-opacity-10 border">
           <h5 className="text-center mb-3">Appointment History</h5>
 
-          <div className="d-flex justify-content-between bg-dark bg-opacity-75 p-2 rounded mb-2">
+          <div className="d-flex justify-content-between bg-dark bg-opacity-10 p-2 rounded mb-2">
             <p className="mb-0">Facial — 10 Dec 2024 — Completed</p>
             <p className="mb-0">₹800</p>
           </div>
 
-          <div className="d-flex justify-content-between bg-dark bg-opacity-75 p-2 rounded mb-2">
+          <div className="d-flex justify-content-between bg-dark bg-opacity-10 p-2 rounded mb-2">
             <p className="mb-0">Haircut — 05 Sep 2024 — Completed</p>
             <p className="mb-0">₹200</p>
           </div>

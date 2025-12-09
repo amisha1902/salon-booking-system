@@ -1,5 +1,5 @@
 import React from "react";
-import "./BookingPage.css";
+// import "./BookingPage.css";
 
 function BookingPage() {
   return (
@@ -40,7 +40,7 @@ function BookingPage() {
               />
             </div>
             <div className="col-md-6 mt-3 mt-md-0">
-              <select className="form-select bg-dark text-light">
+              <select className="form-select bg-light text-dark">
                 <option value="">Select Your Service</option>
                 <option value="wash">Hair Wash</option>
                 <option value="cutting">Hair Cutting</option>
@@ -53,13 +53,13 @@ function BookingPage() {
             <div className="col-md-6">
               <input
                 type="date"
-                className="form-control bg-transparent text-light border-light"
+                className="form-control bg-transparent text-dark border-light"
               />
             </div>
             <div className="col-md-6 mt-3 mt-md-0">
               <input
                 type="time"
-                className="form-control bg-transparent text-light border-light"
+                className="form-control bg-transparent text-dark border-light"
               />
             </div>
           </div>

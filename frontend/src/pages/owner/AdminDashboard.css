@@ -1,0 +1,65 @@
+.admin-wrapper {
+  background: #111;
+  min-height: 100vh;
+  padding: 30px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.admin-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 20px;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  text-align: left;
+  padding: 15px;
+  color: #b5b5b5;
+  font-size: 14px;
+  border-bottom: 1px solid #333;
+}
+
+.admin-table td {
+  padding: 15px;
+  border-bottom: 1px solid #222;
+  font-size: 15px;
+  color: #eaeaea;
+}
+
+.salon-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #9fc5ff;
+}
+
+/* Status Badge */
+.status-badge {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.confirmed {
+  background: #234524;
+  color: #b1ffb1;
+}
+
+.cancelled {
+  background: #601c1c;
+  color: #ffb6b6;
+}
