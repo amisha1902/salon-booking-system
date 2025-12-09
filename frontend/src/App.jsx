@@ -11,6 +11,15 @@ import SalonDetails from './pages/customer/SalonDetailPage/SalonDetailPage';
 import ProfilePage from './pages/customer/Profile/ProfilePage';
 import LoginPage from './pages/auth/Login/LoginPage';
 import SignupPage from './pages/auth/Signup/SignupPage';
+import { useState } from 'react'
+import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/customer/Home/HomePage'
+import Register from './pages/auth/Register/Register'
+import CartPage from './pages/customer/Cart/CartPage';
+import AdminDashboard from './pages/owner/AdminDashboard';
+import RegisterSalon from './pages/owner/RegisterSalon';
+import Login from './pages/auth/Login/Login';
 
 function App() {
   const location = useLocation();
@@ -29,7 +38,20 @@ function App() {
         
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route 
+            path='/cart' 
+            element={<CartPage />} />
+          <Route
+            path='/admin_dashboard'
+            element={<AdminDashboard/>}
+          />
+
+          <Route
+            path='/register_salon'
+            element={<RegisterSalon/>}
+          />
       </Routes>
+     
       
       {!isAuthRoute && <Footer />}
     </>
