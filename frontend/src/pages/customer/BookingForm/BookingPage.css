@@ -1,0 +1,21 @@
+
+ .booking-bg {
+  background-image: url('images/c.avif');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.form-control::placeholder,
+textarea::placeholder {
+  color: rgba(255,255,255,0.75) !important;
+}
+
+
+.blur-box {
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(20px);
+  color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  border: 1px solid rgba(255,255,255,0.25);
+}
